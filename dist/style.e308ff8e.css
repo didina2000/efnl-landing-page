@@ -78,6 +78,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(198, 239, 211, 0.3);
+  position: relative;
 }
 
 #headerTitle {
@@ -90,6 +91,38 @@ header {
   text-align: center;
   padding-top: 10px;
   font-size: 20px;
+}
+
+/*-- aboutTheTeam --*/
+.aboutTheTeam {
+  background-color: #a0adbd;
+}
+
+.aboutTheTeam h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  border: 15px solid #405777;
+}
+
+.image {
+  flex-basis: 40%;
+}
+
+.aboutUsText {
+  font-size: 20px;
+  padding-left: 20px;
 }
 
 /*-- footer --*/
