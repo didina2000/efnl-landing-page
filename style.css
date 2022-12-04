@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -65,7 +69,7 @@ header {
 }
 
 .main-nav a:hover {
-  color: #4f6b92;
+  color: #a0adbd;
 }
 
 /*-- header --*/
@@ -151,8 +155,65 @@ img {
   display: flex;
   padding-left: 40%;
 }
-/*-- footer --*/
 
+/*-- services --*/
+* {
+  box-sizing: border-box;
+}
+
+.servicesTitle {
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #a0adbd;
+  padding-bottom: 30px;
+}
+
+.servicesContainer {
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+}
+
+.services {
+  background-color: #a0adbd;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.content {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #405777;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.readMoreServices button {
+  background-color: #405777;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.readMoreServices button:hover {
+  background-color: #4f6b92;
+}
+
+.readMoreServices {
+  background-color: #a0adbd;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/*-- footer --*/
 .footer {
   text-align: center;
   background-color: #405777;
@@ -174,7 +235,7 @@ img {
 }
 
 .footer a:hover {
-  color: #4f6b92;
+  color: #a0adbd;
 }
 
 .footer ul {
