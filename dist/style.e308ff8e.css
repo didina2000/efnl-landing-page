@@ -112,19 +112,45 @@ header {
 }
 
 img {
-  max-width: 100%;
   border: 15px solid #405777;
+  border-radius: 4px;
+  display: flex;
+  max-width: 500px;
 }
 
 .image {
   flex-basis: 40%;
+  padding-left: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .aboutUsText {
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
+.readMore {
+  background-color: #405777;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.readMore:hover {
+  background-color: #4f6b92;
+}
+
+.readMoreButton {
+  padding-top: 15px;
+  display: flex;
+  padding-left: 40%;
+}
 /*-- footer --*/
 
 .footer {
