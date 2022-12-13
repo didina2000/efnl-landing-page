@@ -115,7 +115,7 @@ header {
   justify-content: center;
 }
 
-img {
+.teamImage {
   border: 15px solid #405777;
   border-radius: 4px;
   display: flex;
@@ -181,6 +181,7 @@ img {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -213,6 +214,40 @@ img {
   justify-content: center;
 }
 
+/*-- gallery --*/
+.galleryTitle {
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #a0adbd;
+  padding-bottom: 30px;
+}
+
+#gallery {
+  /* background-color: #a0adbd;
+  overflow: auto;
+  justify-items: center;
+  align-items: center;
+  display: table;
+  flex-wrap: wrap;
+  justify-content: center; */
+  display: inline-grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 3px;
+}
+
+#gallery img {
+  /* grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  margin-left: 10px;
+  margin-bottom: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
 /*-- footer --*/
 .footer {
   text-align: center;
