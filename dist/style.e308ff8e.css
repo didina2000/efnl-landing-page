@@ -244,6 +244,95 @@ header {
   object-fit: cover;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
+
+/*-- ourTeam --*/
+
+.teamContainer {
+  background-color: #a0adbd;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.ourTeamTitle {
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #a0adbd;
+  padding-bottom: 30px;
+}
+
+.teamMember {
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px 15px 30px;
+  background-color: #a0adbd;
+}
+.teamMember .pic {
+  background-color: #4f6b92;
+  padding: 10px;
+  margin-bottom: 25px;
+  transition: all 0.5s ease 0s;
+}
+.teamMember:hover .pic {
+  background: #405777;
+  border-radius: 50%;
+}
+.pic img {
+  height: auto;
+  border-radius: 50%;
+}
+.teamMember .name {
+  font-weight: 600;
+  color: #2e282a;
+  text-transform: uppercase;
+  display: block;
+  font-size: 20px;
+  margin: 0 0 7px 0;
+}
+.teamMember .post {
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.teamMember .social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.teamMember .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.teamMember .social li a {
+  border-radius: 50%;
+  font-size: 15px;
+  color: #4f6b92;
+  border: 1px solid #fff;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  transition: all 0.5s ease 0s;
+}
+.teamMember:hover .social li a {
+  background: #405777;
+  color: #fff;
+}
+
 /*-- footer --*/
 .footer {
   text-align: center;
