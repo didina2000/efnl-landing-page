@@ -104,7 +104,7 @@ header {
 
 .aboutTheTeam h1 {
   text-align: center;
-  padding-top: 30px;
+  padding: 50px 0px;
   color: #fff;
   text-transform: uppercase;
 }
@@ -152,6 +152,7 @@ header {
 
 .readMoreButton {
   padding-top: 15px;
+  padding-bottom: 50px;
   display: flex;
   padding-left: 40%;
 }
@@ -163,11 +164,10 @@ header {
 
 .servicesTitle {
   text-align: center;
-  padding-top: 30px;
+  padding: 50px 0px;
   color: #fff;
   text-transform: uppercase;
   background-color: #a0adbd;
-  padding-bottom: 30px;
 }
 
 .servicesContainer {
@@ -209,7 +209,6 @@ header {
 
 .readMoreServices {
   background-color: #a0adbd;
-  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -221,11 +220,10 @@ header {
 
 .galleryTitle {
   text-align: center;
-  padding-top: 30px;
+  padding: 50px 0px;
   color: #fff;
   text-transform: uppercase;
   background-color: #a0adbd;
-  padding-bottom: 30px;
 }
 
 #gallery {
@@ -235,7 +233,45 @@ header {
   grid-gap: 20px;
   align-items: stretch;
   justify-items: center;
-  margin: 40px;
+  margin: 0px 40px 0px;
+  position: relative;
+}
+
+.galleryEffect {
+  position: relative;
+}
+
+.galleryEffect .photoDescription {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  margin: 3em;
+  padding: 0 1em;
+  border-right: 4px solid #fff;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+.galleryEffect:hover {
+  cursor: pointer;
+}
+
+.galleryEffect:hover .photoDescription {
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.galleryEffect:hover img {
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  opacity: 0.3;
 }
 
 #gallery img {
@@ -265,11 +301,10 @@ header {
 
 .ourTeamTitle {
   text-align: center;
-  padding-top: 30px;
+  padding: 50px 0px;
   color: #fff;
   text-transform: uppercase;
   background-color: #a0adbd;
-  padding-bottom: 30px;
 }
 
 .teamMember {
