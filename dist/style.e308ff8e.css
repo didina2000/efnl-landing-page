@@ -179,7 +179,7 @@ header {
 .services {
   background-color: #a0adbd;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-bottom: 50px;
   flex-wrap: wrap;
 }
@@ -282,21 +282,8 @@ header {
 }
 
 /*-- ourTeam --*/
-
-.teamContainer {
+.ourTeamSection {
   background-color: #a0adbd;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .ourTeamTitle {
@@ -307,65 +294,64 @@ header {
   background-color: #a0adbd;
 }
 
-.teamMember {
-  border-radius: 15px;
-  text-align: center;
-  padding: 20px 15px 30px;
-  background-color: #a0adbd;
-}
-.teamMember .pic {
-  background-color: #4f6b92;
-  padding: 10px;
-  margin-bottom: 25px;
-  transition: all 0.5s ease 0s;
-}
-.teamMember:hover .pic {
-  background: #405777;
-  border-radius: 50%;
-}
-.pic img {
-  height: auto;
-  border-radius: 50%;
-}
-.teamMember .name {
-  font-weight: 600;
-  color: #2e282a;
-  text-transform: uppercase;
-  display: block;
-  font-size: 20px;
-  margin: 0 0 7px 0;
-}
-.teamMember .post {
-  color: #fff;
-  text-transform: capitalize;
-  display: block;
-  font-size: 15px;
-  margin-bottom: 15px;
+.responsiveContainer {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.teamMember .social {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.responsiveCell {
+  min-height: 75px;
 }
-.teamMember .social li {
-  display: inline-block;
-  margin-right: 5px;
+
+.teamCardContainer {
+  width: 280px;
+  margin: 0 0 40px 0;
 }
-.teamMember .social li a {
-  border-radius: 50%;
-  font-size: 15px;
-  color: #4f6b92;
-  border: 1px solid #fff;
-  display: block;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  transition: all 0.5s ease 0s;
+
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.teamMember:hover .social li a {
-  background: #405777;
+
+.imgWrapper {
+  width: 100%;
+}
+
+.memberImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 5px solid #405777;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: 700;
   color: #fff;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+.position {
+  font-size: 25px;
+  font-weight: 700;
+  color: #405777;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.socialMediaLinks {
+  width: 125px;
+  display: flex;
+  justify-content: center;
 }
 
 /*-- footer --*/
