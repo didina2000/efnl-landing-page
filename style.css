@@ -354,6 +354,49 @@ header {
   justify-content: center;
 }
 
+/*-- contactUsSection --*/
+.contactUsTitle {
+  text-align: center;
+  padding: 50px 0px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #a0adbd;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.submitForm {
+  background-color: #405777;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.submitForm:hover {
+  background-color: #4f6b92;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #a0adbd;
+  padding: 20px;
+}
+
 /*-- footer --*/
 .footer {
   text-align: center;
