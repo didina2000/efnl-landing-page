@@ -31,7 +31,6 @@ a {
 }
 
 /*--navbar--*/
-
 header {
   display: flex;
   width: 100%;
@@ -72,57 +71,82 @@ header {
   color: #a0adbd;
 }
 
-/*--contactUsSections--*/
-
-.contactUsSection {
-  background-color: #a0adbd;
+/*-- aboutUsSection --*/
+.slideshow-container {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
 }
 
-.contactUsTitle {
-  text-align: center;
-  padding: 50px 0px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #a0adbd;
+.mySlides {
+  display: none;
 }
 
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-.submitForm {
-  background-color: #405777;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+.prev,
+.next {
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.submitForm:hover {
-  background-color: #4f6b92;
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.columnForm {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
-  padding: 50px 80px;
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.container::after {
-  content: "";
-  display: table;
-  clear: both;
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*-- footer --*/
