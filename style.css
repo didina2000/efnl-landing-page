@@ -73,33 +73,42 @@ header {
 }
 
 /*-- header --*/
+.header {
+  height: 100%;
+}
 
 #teamPhoto {
-  background-image: url("/images/2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("/images/2.jpg");
   width: 100vw;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(198, 239, 211, 0.3);
   position: relative;
 }
 
-#headerTitle {
+.headerText {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  align-content: center;
   text-align: center;
-  padding-top: 500px;
-  font-size: 50px;
+  color: #fff;
+}
+
+#headerTitle {
+  font-size: 60px;
 }
 
 #schoolDescription {
-  text-align: center;
-  padding-top: 10px;
   font-size: 20px;
 }
 
 /*-- aboutTheTeam --*/
 .aboutTheTeam {
   background-color: #a0adbd;
+  height: 100%;
 }
 
 .aboutTheTeam h1 {
@@ -118,21 +127,19 @@ header {
 .teamImage {
   border: 15px solid #405777;
   border-radius: 4px;
-  display: flex;
   max-width: 500px;
-}
-
-.image {
-  flex-basis: 40%;
-  padding-left: 200px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* display: inline-block;
+  margin: 25px 10px; */
 }
 
 .aboutUsText {
   font-size: 20px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 40px;
+  padding-right: 60px;
+}
+
+.image {
+  padding-left: 60px;
 }
 
 .readMore {
@@ -152,9 +159,9 @@ header {
 
 .readMoreButton {
   padding-top: 15px;
-  padding-bottom: 50px;
   display: flex;
-  padding-left: 40%;
+  align-items: center;
+  justify-content: center;
 }
 
 /*-- services --*/
@@ -314,6 +321,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .imgWrapper {
@@ -350,6 +358,26 @@ header {
 
 .socialMediaLinks {
   width: 125px;
+  display: flex;
+  justify-content: center;
+}
+
+.seeAllTeam button {
+  background-color: #405777;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.seeAllTeam button:hover {
+  background-color: #4f6b92;
+}
+
+.seeAllTeam {
+  background-color: #a0adbd;
   display: flex;
   justify-content: center;
 }
@@ -392,12 +420,15 @@ textarea {
 }
 
 .container {
-  border-radius: 5px;
   background-color: #a0adbd;
   padding: 20px;
 }
 
 /*-- footer --*/
+.footer img {
+  height: 200px;
+  width: 300px;
+}
 .footer {
   text-align: center;
   background-color: #405777;

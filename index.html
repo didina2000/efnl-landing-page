@@ -7,6 +7,8 @@
 
 <!DOCTYPE html>
 <html>
+  <title>English For a New Life</title>
+  <link rel="icon" type="image/x-icon" href="/images/icon.png" />
   <head>
     <link href="style.css" rel="stylesheet" type="text/css" media="all" />
     <link
@@ -46,27 +48,36 @@
     goToServicesPage = () => {
       window.location = "/services.html";
     };
+
+    goToOurTeamPage = () => {
+      window.location = "/ourTeam.html";
+    };
   </script>
 
   <body>
     <!-- /*-- header --*/ -->
-    <div id="teamPhoto">
-      <header>
-        <h1 class="logo">English For a New Life</h1>
-        <ul class="main-nav">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="about.html">About</a></li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-        </ul>
-      </header>
-      <div class="headerText">
-        <h3 id="headerTitle">Școala creștină ENGLISH FOR A NEW LIFE</h3>
-        <p id="schoolDescription">
-          Cursuri de limbă engleză de calitate. Instruiri pentru formarea noilor
-          profesori de limbă engleză. Manuale proprii cu conținut biblic.
-        </p>
+    <div class="headerSection">
+      <div id="teamPhoto">
+        <header>
+          <h1 class="logo">English For a New Life</h1>
+          <ul class="main-nav">
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="ourTeam.html">Our Team</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+          </ul>
+        </header>
+        <div class="headerText">
+          <h3 id="headerTitle">Școala creștină ENGLISH FOR A NEW LIFE</h3>
+          <p id="schoolDescription">
+            Cursuri de limbă engleză de calitate. Instruiri pentru formarea
+            noilor profesori de limbă engleză. Manuale proprii cu conținut
+            biblic.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -198,8 +209,8 @@
                 class="memberImg"
               />
             </div>
-            <p class="name">Maxwell Doe</p>
-            <p class="position">Instructor</p>
+            <p class="name">Vasile Filat</p>
+            <p class="position">Founder</p>
             <div class="socialMediaLinks">
               <a href="http://www.facebook.com/" target="_blank"
                 ><img
@@ -275,57 +286,11 @@
             </div>
           </div>
         </div>
-        <div class="responsiveCell teamCardContainer">
-          <div class="teamCard">
-            <img src="/images/1.jpg" class="memberImg" />
-            <p class="name">Maxwell Doe</p>
-            <p class="position">Instructor</p>
-            <div class="socialMediaLinks">
-              <a href="http://www.facebook.com/" target="_blank"
-                ><img
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
-              /></a>
-              <a href="http://www.instagram.com/" target="_blank"
-                ><img
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="responsiveCell teamCardContainer">
-          <div class="teamCard">
-            <img src="/images/1.jpg" class="memberImg" />
-            <p class="name">Maxwell Doe</p>
-            <p class="position">Instructor</p>
-            <div class="socialMediaLinks">
-              <a href="http://www.facebook.com/" target="_blank"
-                ><img
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
-              /></a>
-              <a href="http://www.instagram.com/" target="_blank"
-                ><img
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="responsiveCell teamCardContainer">
-          <div class="teamCard">
-            <img src="/images/1.jpg" class="memberImg" />
-            <p class="name">Maxwell Doe</p>
-            <p class="position">Instructor</p>
-            <div class="socialMediaLinks">
-              <a href="http://www.facebook.com/" target="_blank"
-                ><img
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg"
-              /></a>
-              <a href="http://www.instagram.com/" target="_blank"
-                ><img
-                  src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
-              /></a>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="seeAllTeam">
+        <button class="seeAllTeam" onclick="goToOurTeamPage()">
+          See the whole team
+        </button>
       </div>
     </div>
 
@@ -339,7 +304,7 @@
             type="text"
             id="fname"
             name="firstname"
-            placeholder="Your name.."
+            placeholder="Your name..."
           />
 
           <label for="lname">Last Name</label>
@@ -347,21 +312,21 @@
             type="text"
             id="lname"
             name="lastname"
-            placeholder="Your last name.."
+            placeholder="Your last name..."
           />
 
           <label for="country">Country</label>
           <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
+            <option value="australia">Republica Moldova</option>
+            <option value="canada">România</option>
+            <option value="usa">Another country</option>
           </select>
 
-          <label for="subject">Subject</label>
+          <label for="subject">Message</label>
           <textarea
             id="subject"
             name="subject"
-            placeholder="Write something.."
+            placeholder="Write something..."
             style="height: 200px"
           ></textarea>
 
@@ -371,6 +336,7 @@
     </div>
     <!-- /*-- footer --*/ -->
     <div class="footer">
+      <img src="/images/icon.png" />
       <div>
         <h3><a href="about.html">About Us</a></h3>
         <p>
