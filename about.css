@@ -72,87 +72,76 @@ header {
 }
 
 /*-- aboutUsSection --*/
-.slideshow-container {
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
+#about {
+  background-color: #a0adbd;
 }
 
-.mySlides {
+.aboutText {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.aboutTheTeamTitle {
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.description {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.column {
+  padding: 10px;
+}
+
+.column img {
+  height: 200px;
+  width: 300px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
   display: none;
 }
 
-.prev,
-.next {
-  cursor: pointer;
+.closebtn {
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
+  top: 10px;
+  right: 15px;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.dot {
+  font-size: 35px;
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /*-- footer --*/
 .footer img {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
 }
 
 .footer {
