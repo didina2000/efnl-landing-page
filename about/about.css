@@ -31,7 +31,6 @@ a {
 }
 
 /*--navbar--*/
-
 header {
   display: flex;
   width: 100%;
@@ -72,56 +71,79 @@ header {
   color: #a0adbd;
 }
 
-/*-- ourTeamSection --*/
-.ourTeamSection {
+/*-- aboutUsSection --*/
+#about {
   background-color: #a0adbd;
 }
 
-.ourTeamSectionTitle {
+.aboutText {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.aboutTheTeamTitle {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
   color: #fff;
   text-transform: uppercase;
   font-size: 50px;
 }
 
+.description {
+  padding: 15px;
+  font-size: 20px;
+}
+
 .column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  padding: 10px;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+.column img {
+  height: 200px;
+  width: 300px;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff;
+.column img:hover {
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .container {
-  padding: 0 16px;
+  position: relative;
+  display: none;
 }
 
-.container h2 {
-  color: rgb(0, 0, 0);
-}
-
-.title {
-  color: #000;
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 /*-- footer --*/
 .footer img {
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 300px;
 }
+
 .footer {
   text-align: center;
   background-color: #405777;
